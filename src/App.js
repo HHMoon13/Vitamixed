@@ -1,9 +1,8 @@
 
 import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import BaseRouter from './Routes'
 import './App.css';
-
 import Layout from "./Containers/Layout"
 
 
@@ -13,7 +12,7 @@ class App extends Component {
   return (
     <div className="App">
        <Router>
-          <Layout {...this.props}>
+          <Layout path={window.location.pathname}>
             <BaseRouter />
           </Layout>
         </Router>

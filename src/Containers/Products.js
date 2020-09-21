@@ -11,23 +11,24 @@ class ProductPage extends React.Component {
     render(){
         return(
             <div style={{marginTop:"5%"}}>
-                <div style={{marginLeft:"2%"}}>
-                <Breadcrumb divider="›">
-                  <Breadcrumb.Item href="/">HOME</Breadcrumb.Item>
-                  <Breadcrumb.Item active>PRODUCTS</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#section-oil">OIL</Breadcrumb.Item>
+            <div style={{marginLeft:"2%", position:"relative"}}>
+                <Breadcrumb >
+                  <Breadcrumb.Item href="/" style={{fontWeight:"100", fontSize:"12px"}}>HOME</Breadcrumb.Item>
+                  <Breadcrumb.Item active style={{fontWeight:"100", fontSize:"12px"}}>PRODUCTS</Breadcrumb.Item>
+                  {/* <Breadcrumb.Item href="#section-oil">OIL</Breadcrumb.Item>
                   <Breadcrumb.Item href="#section-vinegar">VINEGAR</Breadcrumb.Item>
                   <Breadcrumb.Item href="#section-sauces">SAUCES</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#section-mayonnaise">MAYONNAISE</Breadcrumb.Item>
+                  <Breadcrumb.Item href="#section-mayonnaise">MAYONNAISE</Breadcrumb.Item> */}
                 </Breadcrumb>
               </div>
             
             <div className="container ">
 
-                <section id="section-vinegar" style={{padding:"2%"}}>
+                <section id="section-vinegar" style={{padding:""}}>
                 <div className="product-row" >
                     <div class="product-title">
-                        <h2 class="section-title wow fadeInUp">OUR FEATURED VINEGAR</h2>
+                            <h2>OUR FEATURED VINEGAR</h2>        
+                            <span className="product-title-bar"><i class="fa fa-spoon"></i></span>
                     </div>
                     <div className="vinegar-row">
                         <CardList data={VinegarList} />
@@ -35,13 +36,11 @@ class ProductPage extends React.Component {
                 </div>
                 </section>  
 
-                <section id="section-oil" style={{padding:"2%"}}>
+                <section id="section-oil" style={{padding:"1%"}}>
                 <div className="product-row">
                     <div class="product-title">
-                    <span className="product-title-bar"> 
-                        <h2 class="section-title wow fadeInUp">OUR FEATURED OIL</h2>  
-                    </span>
-                             
+                            <h2>OUR FEATURED OIL</h2>        
+                            <span className="product-title-bar"><i class="fa fa-spoon"></i></span>
                     </div>
                     <div className="oil-row">
                         <CardList data={OilList} />
@@ -49,10 +48,11 @@ class ProductPage extends React.Component {
                 </div>     
                 </section>
 
-                <section id="section-sauces" style={{padding:"2%"}}>
+                <section id="section-sauces" style={{padding:"1%"}}>
                 <div className="product-row">
                     <div class="product-title">
-                        <h2 class="section-title wow fadeInUp">OUR FEATURED SAUCES</h2>        
+                            <h2>OUR FEATURED SAUCES</h2>        
+                            <span className="product-title-bar"><i class="fa fa-spoon"></i></span>
                     </div>
                     <div className="sauces-row">
                         <CardList data={SaucesList} />
@@ -60,10 +60,11 @@ class ProductPage extends React.Component {
                 </div> 
                 </section>
 
-                <section id="section-mayonnaise" style={{padding:"2%"}}>
+                <section id="section-mayonnaise" style={{padding:"1%"}}>
                 <div className="product-row">
                     <div class="product-title">
-                        <h2 class="section-title wow fadeInUp">OUR FEATURED MAYONNAISE</h2>        
+                            <h2>OUR FEATURED MAYONNAISE</h2>        
+                            <span className="product-title-bar"><i class="fa fa-spoon"></i></span>
                     </div>
                     <div className="mayonnaise-row">
                         <CardList data={MayonnaiseList} />

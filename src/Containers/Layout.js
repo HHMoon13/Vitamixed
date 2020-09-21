@@ -6,7 +6,7 @@ class Layout extends React.Component {
     render() {
         return (
             <div>
-               <Navabr/>         
+               <Navabr path = {this.props.path}/>         
                 <div className="main-layout" style={{marginBottom:"5%"}}>
                     <div className="layout-background">
                         {this.props.children}

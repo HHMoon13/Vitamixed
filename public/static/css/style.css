@@ -83,14 +83,14 @@ img {
 /*=================================================================*/
 
 a {
-  color: #FF4C60;
+  color: #cd0a0a;
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 a:hover {
-  color: #FFD15C;
+  color: blue;
   text-decoration: none;
 }
 a:focus {
@@ -202,10 +202,36 @@ pre {
 }
 
 /* product page title for each section*/
-
-
-
-
+.product-title h2{
+  color: #00416d;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.product-title .product-title-bar{
+  overflow: hidden;
+  text-align: center;
+}
+.product-title .product-title-bar::before, .product-title-bar::after{
+    background-color: #D4AF37	;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%; 
+}
+.product-title .product-title-bar::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.product-title .product-title-bar::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.product-title i{
+  color: #DAA520;
+}
 /*=================================================================*/
 /*                      HEADER                              
 /*=================================================================*/
@@ -306,6 +332,7 @@ header.desktop-header-1 .vertical-menu li a.nav-link {
 }
 header.desktop-header-1 .vertical-menu li .nav-link.active {
   color: #FFD15C;
+  
 }
 header.desktop-header-1 .submenu {
   display: none;
@@ -604,19 +631,19 @@ header.mobile-header-2 .site-logo img {
 }
 .desktop-header-3 .nav-link {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 350;
   padding: 14px;
+
 }
 .desktop-header-3 .nav-link.active {
-  color: #fb9e00 !important;
+  color: #7d0633 !important;
+  box-shadow: inset 0 -4px 0 0 #7d0633; 
   
 }
 .desktop-header-3 .nav-link:hover {
-  color: #fb9e00 !important;
+  color: #7d0633 !important;
 }
-.nav-item a:hover { 
-  box-shadow: inset 0 -4px 0 0 #7d0633; 
-}
+
 .desktop-header-3 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -651,14 +678,14 @@ header.mobile-header-2 .site-logo img {
 }
 .desktop-header-3.light {
   background: #F9F9FF;
-  border-bottom: solid 2px #fb9e00;
-  -webkit-box-shadow: 8px 8px 6px -6px #777;
-       -moz-box-shadow: 8px 9px 6px -6px #777;
-            box-shadow:  9px 6px -6px #777;
+  border-bottom: solid 2px #7d0633;
+  -webkit-box-shadow: 0px 8px 16px -6px #777;
+       -moz-box-shadow: 8px 9px 16px -6px #777;
+            box-shadow:  9px 16px -6px #777;
            
 }
 .desktop-header-3.light .navbar-dark .navbar-nav .nav-link {
-  color: #353353;
+  color: #777;
   
 }
 
@@ -807,7 +834,7 @@ section.home.light .social-icons li a:hover {
   margin: 0;
   margin-left: 14px;
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 .section-title:before {
   content: "";
@@ -816,10 +843,12 @@ section.home.light .social-icons li a:hover {
   height: 30px;
   left: -14px;
   top: -14px;
+  padding-right: 5px;
   position: absolute;
   width: 30px;
-  
+  text-align: center;
 }
+
 
 
 /*=================================================================*/
@@ -2086,3 +2115,9 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+/* image background hover */
+.post-module:hover  .thumbnail{
+  /* background-image: url(../images/amex); */
+  
+
+}

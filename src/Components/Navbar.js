@@ -1,8 +1,20 @@
 import React from "react"
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as SubLink } from 'react-router-hash-link';
+import {Route, Link} from 'react-router-dom'
+
+import { NavLink } from 'react-router-dom'
 
 
-function Navbar(){
+class Navbar extends React.Component{
+    render(){
+    const path  = this.props.path;
+    const homeClass = path === "/" ? "nav-link active" : "nav-link";
+    const missionClass = path==="/mission" ? "nav-link active" : "nav-link";
+    const contactClass = path==="/contacts" ? "nav-link active" : "nav-link";
+    // const productClass = path===("/products" || "/products#section-mayonnaise" || "/products#section-vinegar" || "/products#section-oil"|| "/products#section-sauces") 
+    // ? "nav-link active" : "nav-link";
+    const productClass = path.indexOf("/products")=== -1 ? "nav-link" : "nav-link active";
+    console.log(path);
     return(
 
         <div>
@@ -18,27 +30,28 @@ function Navbar(){
 
                         <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{height:"100%"}}>
                             <ul class="navbar-nav ml-auto scrollspy" style={{margin:"0 auto"}}>
-                                <li class="nav-item dropdown">
-                                    <a  href="/mission" class="nav-link">OUR MISSION</a>
+                                
+                                <li class="nav-item">
+                                    <a href="/mission" class={missionClass}>OUR MISSION</a>
                                 </li>
                                 <li class="nav-item">
                                     {/* <a  href="/products" class="nav-link">PRODUCTS</a> */}
                                     <div class="dropdown">
-                                        <a class="nav-link" href="/products">PRODUCTS 
+                                        <a class={productClass} href="/products">PRODUCTS 
                                         <i class="fa fa-caret-down"></i>
                                         </a>
                                         <div class="dropdown-content">
                                         
-                                       <Link to="/products#section-oil">OIL</Link>
-                                       <Link to="/products#section-vinegar">VINEGAR</Link>
-                                       <Link to="/products#section-sauces">SAUCES</Link>
-                                       <Link to="/products#section-mayonnaise">MAIONNAISE</Link>
+                                       <a href="/products#section-oil">OIL</a>
+                                       <a href="/products#section-vinegar">VINEGAR</a>
+                                       <a href="/products#section-sauces">SAUCES</a>
+                                       <a href="/products#section-mayonnaise">MAIONNAISE</a>
                                     </div>
                                 </div> 
                                 </li>
 
                                 <li class="nav-item">
-                                    <a  href="/contacts" class="nav-link">CONTACT US</a>
+                                    <a  href="/contacts" class={contactClass}>CONTACT US</a>
                                 </li>
                                
                             </ul>
@@ -53,6 +66,7 @@ function Navbar(){
            
         </div>
     );
+}
 }
 
 export default Navbar;

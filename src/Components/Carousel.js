@@ -22,7 +22,7 @@ const carouselList = [
 
 const renderTooltip = (props) => (
     <Tooltip id="scrol-tooltip" {...props}>
-            EXPLORE OUT ITEMS
+            EXPLORE OUR ITEMS
     </Tooltip>
   );
 
