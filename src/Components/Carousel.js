@@ -39,7 +39,7 @@ function CarouselLayout() {
                     delay={{ show: 250, hide: 400 }}
                     overlay={renderTooltip}
                 >
-                    <a href="#home-product" class="scroll-down-arrow" ></a>
+                    <a href="#home-product" class="scroll-down-arrow"></a>
                 </OverlayTrigger>
                 
                 </div>

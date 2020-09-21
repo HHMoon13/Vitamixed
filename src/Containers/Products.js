@@ -10,8 +10,8 @@ class ProductPage extends React.Component {
     
     render(){
         return(
-            <div style={{marginTop:"5%"}}>
-            <div style={{marginLeft:"2%", position:"relative"}}>
+            <div style={{marginTop:"50px"}}>
+            <div style={{ position:"relative"}}>
                 <Breadcrumb >
                   <Breadcrumb.Item href="/" style={{fontWeight:"100", fontSize:"12px"}}>HOME</Breadcrumb.Item>
                   <Breadcrumb.Item active style={{fontWeight:"100", fontSize:"12px"}}>PRODUCTS</Breadcrumb.Item>

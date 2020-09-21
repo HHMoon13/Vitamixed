@@ -5,7 +5,7 @@ import Footer from "../Components/Footer"
 class Layout extends React.Component {
     render() {
         return (
-            <div>
+            <div >
                <Navabr path = {this.props.path}/>         
                 <div className="main-layout" style={{marginBottom:"5%"}}>
                     <div className="layout-background">

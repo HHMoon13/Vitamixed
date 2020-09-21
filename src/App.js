@@ -10,7 +10,7 @@ import Layout from "./Containers/Layout"
 class App extends Component {
   render(){
   return (
-    <div className="App">
+    <div className="App" >
        <Router>
           <Layout path={window.location.pathname}>
             <BaseRouter />

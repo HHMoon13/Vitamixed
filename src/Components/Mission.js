@@ -6,8 +6,8 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 function Mission() {
         return(
-          <div style={{marginTop:"5%"}}>
-              <div style={{marginLeft:"2%", position:"relative"}}>
+          <div style={{marginTop:"50px"}}>
+              <div style={{marginLeft:"", position:"relative"}}>
                 <Breadcrumb>
                   <Breadcrumb.Item href="/" style={{fontWeight:"100", fontSize:"12px"}} >HOME</Breadcrumb.Item>
                   <Breadcrumb.Item active style={{fontWeight:"100", fontSize:"12px"}}>OUR MISSION</Breadcrumb.Item>

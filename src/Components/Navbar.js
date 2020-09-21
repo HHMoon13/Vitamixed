@@ -26,7 +26,7 @@ class Navbar extends React.Component{
                         <a class="navbar-brand" href="/" style={{marginLeft:"10px"}}>
                         <img src="/static/images/client-7.svg" alt="VITAMIXED" /></a> 
 
-                        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+                        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed" data-target="#navbarNavDropdown" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 
                         <div class="collapse navbar-collapse" id="navbarNavDropdown" style={{height:"100%"}}>
                             <ul class="navbar-nav ml-auto scrollspy" style={{margin:"0 auto"}}>
