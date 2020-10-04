@@ -1,3 +1,4 @@
+import oilList from "./oil";
 
 const mayonnaiseDB= [
    {
@@ -6,10 +7,20 @@ const mayonnaiseDB= [
     itemList:[
         {
             itemID: "1",
-            image: "/static/images/amex4.png",
-            title : "Mayonnaise 1",
-            description: "OUR FOCUS ON QUALITY",
-            item: "3 ITEMS"
+            image: "/static/images/amex2.png",
+            title : "American Real Mayonnaise",
+            description: "Made with freshest eggs and fines oil",
+            item: "3 ITEMS",
+            ingredients:[
+                "Water", "Canola Oil", "Egg Yolks", "Corn Syrup", "Distilled Vinegar",
+                "Salt", "Sodium Benzoate & Potassium Sorbate", "Mustard Seed",
+                "Xanthan Gum", "Onion Powder", "Calcium Disodiumedta"
+
+            ],
+            nutritions:[
+
+            ]
+
         },
         {
             itemID: "2",

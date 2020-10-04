@@ -1,15 +1,45 @@
 import React from "react"
 
+import VinegarList from "../data/vinegar"
+import SaucesList from "../data/sauces"
+import OilList from "../data/oil"
+import MayonnaiseList from "../data/mayonnaise"
+
+import NavTabs from "./Tabs"
 
 class DetailContainer extends React.Component {
     render(){
+        
         const title = this.props.match.params.title;
         const itemID = this.props.match.params.itemID;
+        let dataDict = extractItemData(title, itemID);
+        console.log(dataDict)
         return(
-            <div style={{marginTop:"10%"}}>
-             Detail Page of {title} and {itemID}
+            <div className="container" style={{marginTop:"10%"}}>
+                <h3 className="itemName"><span>{dataDict["title"]}</span></h3>
+                <div className="row">
+                    <div className="col">
+                        <img src={dataDict["image"]} alt="plus icon img"/>
+                    </div>
+                    <div className="col">
+                       <NavTabs data = {dataDict}/>
+                    </div>
+
+                </div>
             </div>
         )
+    }
+}
+
+function extractItemData(title, itemID){
+    let dataDict = [];
+    if(title == "mayonnaise"){
+        dataDict = MayonnaiseList;
+    }
+    for (const [index, value] of dataDict[0]["itemList"].entries()) {
+        if(value["itemID"]== itemID){
+            return value;
+        }
     }
 }
 

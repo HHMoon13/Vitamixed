@@ -245,6 +245,7 @@ list-style: none;
   -moz-transform: scale(1.15);
   transform: scale(1.15);
   opacity: 1;
+  
 }
 .post-module .thumbnail {
   overflow: hidden;
