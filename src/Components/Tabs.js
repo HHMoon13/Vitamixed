@@ -98,7 +98,7 @@ const NavTabs = (props) => {
                         )}
                     </ul>
                     <p className="ingredients_body">
-                        Ingredients: {props.data["ingredients"]}
+                    INGREDIENTS: {props.data["ingredients"]}
                     </p>
 
                 </TabPanel>
