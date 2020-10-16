@@ -15,13 +15,13 @@ class DetailContainer extends React.Component {
         let dataDict = extractItemData(title, itemID);
         console.log(dataDict)
         return(
-            <div className="container" style={{marginTop:"10%"}}>
+            <div className="container" style={{marginTop:"6%"}}>
                 <h3 className="itemName"><span>{dataDict["title"]}</span></h3>
-                <div className="row">
-                    <div className="col">
+                <div class="row">
+                    <div class="col-md-6">
                         <img src={dataDict["image"]} alt="plus icon img"/>
                     </div>
-                    <div className="col">
+                    <div class="col-md-6">
                        <NavTabs data = {dataDict}/>
                     </div>
 

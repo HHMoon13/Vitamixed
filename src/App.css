@@ -418,4 +418,44 @@ list-style: none;
 
  /* Button translation with animate */
 
-/* Fifth Button */
+/* Deatils Page Tab */
+.ingredients_header{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: medium;
+  font-weight: 600;
+  text-align: justify;
+  
+}
+.ingredients_bullet{
+  text-align: justify;
+  font-family: 'Rajdhani', sans-serif;
+  margin-left: 5%;
+  font-weight: bold;
+  
+}
+.ingredients_body{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: medium;
+  text-align: justify;
+}
+
+.nutritions_fact{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  color: #555555;
+}
+
+hr.hr-17 {
+  margin: 0;
+  padding: 0;
+  height: 5px;
+  box-shadow: inset 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+ 
+}
+.item-p{
+  margin: 0;
+  padding: 0;
+}
+.nutritions_fact .row{
+  margin: 0;
+  padding: 0;
+}
