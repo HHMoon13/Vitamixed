@@ -16,7 +16,7 @@ const CardList = (props) => {
                             <h1 style={{color: "#7d0633", fontSize:"17px"}} class="title">{value["title"]}</h1>
                             <p style={{color: "#7d0633", fontSize:"13px"}}>{value["description"]}</p>
                             <div class="post-meta">
-                                <a class="timestamp" href={`/products/details/${ props.data[0]["itemName"] }/${value["itemID"]}`}>
+                                <a class="timestamp" href={value["detail_link"]}>
                                       <button  style={{width: "70%"}} class="button button-product-details ">View Details</button>
                                       
                                 </a>

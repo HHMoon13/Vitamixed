@@ -7,6 +7,7 @@ const mayonnaiseDB= [
     itemList:[
         {
             itemID: "1",
+            detail_link: "/products/details/mayonnaise/1",
             image: "/static/images/amex2.png",
             title : "American Real Mayonnaise",
             description: "Made with freshest eggs and fines oil",

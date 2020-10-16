@@ -15,10 +15,6 @@ class ProductPage extends React.Component {
                 <Breadcrumb >
                   <Breadcrumb.Item href="/" style={{fontWeight:"100", fontSize:"12px"}}>HOME</Breadcrumb.Item>
                   <Breadcrumb.Item active style={{fontWeight:"100", fontSize:"12px"}}>PRODUCTS</Breadcrumb.Item>
-                  {/* <Breadcrumb.Item href="#section-oil">OIL</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#section-vinegar">VINEGAR</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#section-sauces">SAUCES</Breadcrumb.Item>
-                  <Breadcrumb.Item href="#section-mayonnaise">MAYONNAISE</Breadcrumb.Item> */}
                 </Breadcrumb>
               </div>
             
