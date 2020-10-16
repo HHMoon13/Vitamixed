@@ -4,17 +4,17 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 const carouselList = [
     {
-        image: "/static/images/food1.jpg",
+        image: "/static/images/food2.jpg",
         title : "HIGH QUALITY INGREDIENTS",
         description: "OUR FOCUS ON QUALITY"
     },
     {
-        image: "/static/images/food2.jpg",
+        image: "/static/images/food3.jpg",
         title : "WE PROVIDE HALAL FOOD",
         description: "AUTHENTIC TASTE"
     },
     {
-        image: "/static/images/food3.jpg",
+        image: "/static/images/food1.jpg",
         title : "PREMIUM QUALITY",
         description: "NO COMPROMISE WITH TASTE"
     }

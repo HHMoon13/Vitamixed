@@ -1,5 +1,7 @@
 .vscode
 env
+venv/
+.idea/
 **/*.pyc
 node_modules
 
